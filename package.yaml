@@ -1,0 +1,57 @@
+name:                Posshu
+version:             0.1.0.0
+github:              "felipeg/Posshu"
+license:             BSD3
+author:              "Felipe G"
+maintainer:          "example@example.com"
+copyright:           "2022 Felipe G"
+
+description: <https://github.com/felipeg/Posshu#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- universum
+- morpheus-graphql
+- scotty
+- microlens-platform
+- mtl
+- polysemy
+- hasbolt
+- text
+- bytestring
+- aeson
+- req
+- polysemy-req
+
+default-extensions:
+- UndecidableInstances
+- NoImplicitPrelude
+- LambdaCase
+- TupleSections
+- FlexibleContexts
+- OverloadedStrings
+- TypeFamilies
+- ScopedTypeVariables
+- NamedFieldPuns
+- MultiParamTypeClasses
+- FlexibleInstances
+- DuplicateRecordFields
+- OverloadedRecordDot
+- DisambiguateRecordFields
+- DeriveGeneric
+- DataKinds
+- DeriveAnyClass
+- DerivingStrategies
+- AllowAmbiguousTypes
+- TypeApplications
+- GeneralizedNewtypeDeriving
+- RankNTypes
+
+executables:
+  Maki-exe:
+    main: Main.hs
+    source-dirs: src
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
